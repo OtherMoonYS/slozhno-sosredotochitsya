@@ -2,4 +2,189 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-width: 1024px;
+  margin: 0 auto;
+  color: var(--color-text);
+  background-color: var(--color-text);
+  background-image: var(--background-cover);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  max-width: 1024px;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+}
+
+.header__theme-title {
+  color: var(--color-heading);
+  font-size: 157px;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--color-shadow);
+  margin-top: 273px;
+  margin-bottom: 114px;
+}
+
+.header__theme-paragraph-block {
+  max-width: 491px;
+  max-height: 71px;
+  align-self: flex-end;
+  margin-bottom: 135px;
+  margin-right: 20px;
+}
+
+.header__theme-paragraph-text {
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.title-decor {
+  background-color: var(--color-background);
+}
+
+.header__theme-menu {
+  align-self: center;
+  margin-top: 20px;
+  min-width: 230px;
+  min-height: 26px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: var(--color-buttons);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0 13px;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--color-buttons);
+  outline-offset: 1px;
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--cover-link-hover);
+  outline-offset: 1px;
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--color-buttons);
+  outline: none;
+}
+
+.header__rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-rec);
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  margin: 20px 29px 0 0;
+}
+
+.header__rec::after {
+  content: '';
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--color-rec);
+  background-color: var(--color-rec);
+  width: 7px;
+  height: 7px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid var(--color-buttons);
+  border-right: 1px solid var(--color-buttons);
+  width: 25px;
+  height: 25px;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  margin: 20px;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid var(--color-buttons);
+  border-left: 1px solid var(--color-buttons);
+  width: 25px;
+  height: 25px;
+  inset-block-end: 0;
+  margin: 20px;
+}
+
+@media (max-width: 1023px) {
+  .header__theme-title {
+    font-size: 120px;
+    margin: 173px 0 162px 0;
+  }
+
+  .header__theme-paragraph-block {
+    max-width: 364px;
+    max-height: 117px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .header__theme-menu {
+    align-self: flex-end;
+    margin: 172px 20px 0 0;
+    min-width: 70px;
+    min-height: 98px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__theme-title {
+    font-size: 116px;
+    margin: 65px 10px 55px 10px;
+  }
+
+  .header__theme-paragraph-block {
+    max-width: 355px;
+    margin: 0 10px 0 10px;
+  }
+
+  .header__theme-menu {
+    margin: 75px 10px 0 0;
+  }
+
+  .decorated-zone::after {
+    margin: 10px;
+  }
+
+  .decorated-zone::before {
+    margin: 10px;
+  }
+
+  .header__rec {
+    margin: 10px 19px 0 0;
+  }
 }
