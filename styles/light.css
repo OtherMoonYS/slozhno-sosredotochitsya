@@ -8,6 +8,10 @@
     --color-background: rgb(255, 141, 203);
     --color-text: rgb(53, 52, 48);
     --color-rec: rgb(255, 241, 247);
+    --color-why-text: rgb(53, 52, 48);
+    --page-background: rgb(255, 241, 247);
+    --link-border-color: rgb(53, 52, 48);
+    --link-shadow: rgb(255, 141, 203);
   }
 }
 
@@ -20,4 +24,8 @@
   --color-background: rgb(255, 141, 203);
   --color-text: rgb(53, 52, 48);
   --color-rec: rgb(255, 241, 247);
+  --color-why-text: rgb(53, 52, 48);
+  --page-background: rgb(255, 241, 247);
+  --link-border-color: rgb(53, 52, 48);
+  --link-shadow: rgb(255, 141, 203);
 }
