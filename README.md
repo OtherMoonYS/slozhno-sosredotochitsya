@@ -4,7 +4,7 @@
 
 # Project: Slozhno Sosredotochitsya
 ### The project was created during 3 training sprint
-### Link to this project: [https://github.com/OtherMoonYS/slozhno-sosredotochitsya]
+### Link to this project: https://github.com/OtherMoonYS/slozhno-sosredotochitsya
 
 ## Technologies used
 
